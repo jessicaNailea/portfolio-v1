@@ -1,0 +1,21 @@
+@import "../../styles/colors";
+@import "../../styles/mixins";
+
+.tecPanel-container {
+  width: 100%;
+  background-color: $dark-gray;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 48px;
+  padding-bottom: 100px;
+  box-sizing: border-box;
+  border-bottom: 8px solid $gray;
+
+  @include xlarge {
+    flex-direction: row;
+    align-items: flex-end;
+    border-bottom: 12px solid $gray;
+    justify-content: space-evenly;
+  }
+}

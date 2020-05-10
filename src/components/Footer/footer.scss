@@ -1,0 +1,24 @@
+@import "../../styles/colors";
+@import "../../styles/mixins";
+
+.footer-container {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: $white;
+  padding: 24px;
+  padding-bottom: 48px;
+
+  @include large {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+
+.footer-title {
+  font-size: 24px;
+  color: $white;
+  margin-top: 50px;
+  margin-left: 100px;
+}

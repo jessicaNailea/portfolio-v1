@@ -1,0 +1,23 @@
+@import "../../../styles/colors";
+@import "../../../styles/mixins";
+
+.iconItem-general {
+  cursor: pointer;
+  font-family: Roboto;
+  font-weight: bold;
+  box-sizing: content-box;
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  border: 2px solid $black;
+  border-radius: 10px;
+  padding: 8px;
+  margin: 8px;
+  height: 90px;
+  background-color: $white;
+
+  @include large {
+    width: 5%;
+  }
+}

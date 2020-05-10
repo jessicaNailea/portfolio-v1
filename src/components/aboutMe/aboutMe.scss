@@ -1,0 +1,77 @@
+@import "../../styles/colors";
+@import "../../styles/mixins";
+
+.aboutMe-card {
+  display: flex;
+  align-items: center;
+  background-color: $dark-gray;
+  border: 12px solid $gray;
+  border-radius: 40px;
+  box-sizing: border-box;
+  flex-direction: column;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  padding-left: 50px;
+
+  @include large {
+    width: 60%;
+    margin: 24px;
+    flex-direction: row;
+    margin-left: 70px;
+    padding-left: 50px;
+  }
+
+  @include xlarge {
+    width: 60%;
+    margin-left: 85px;
+    padding-left: 40px;
+  }
+}
+
+.scrollbar-container {
+  display: none;
+
+  @include xlarge {
+    color: $dark-gray;
+    display: flex;
+    padding: 12px;
+    justify-content: flex-start;
+  }
+}
+
+.aboutMe-description {
+  color: $white;
+
+  @include large {
+    font-size: 20px;
+    margin: 48px;
+    margin-bottom: 48px;
+  }
+
+  @include xlarge {
+    width: fit-content;
+    font-size: 22px;
+  }
+}
+
+.aboutMe-responsive-avatarmd {
+  display: flex;
+
+  @include large {
+    display: none;
+  }
+
+  @include xlarge {
+    display: none;
+  }
+}
+
+.aboutMe-responsive-avatarl {
+  display: none;
+
+  @include large {
+    display: inline;
+  }
+}
