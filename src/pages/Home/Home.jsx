@@ -1,11 +1,10 @@
 import React, { Component } from "react";
 import "./Home.scss";
-// import CarouselComponent from "../../components/carousel";
-import Hero from "../../components/hero";
-import IconsMenu from "../../components/IconsMenu";
-import TecPanel from "../../components/tecPanel";
-import AboutMe from "../../components/aboutMe";
-import Footer from "../../components/Footer";
+import Hero from "../../components/home/hero";
+import IconsMenu from "../../components/home/IconsMenu";
+import TecPanel from "../../components/home/tecPanel";
+import AboutMe from "../../components/home/aboutMe";
+import Footer from "../../components/home/footer";
 
 import {
   getUserProfileData,
@@ -74,8 +73,8 @@ export class Home extends Component {
     return (
       <div className="home">
         <IconsMenu items={this.state.items} onClick={this.handldeClickMenu} />
-        <Hero />
         <main>
+          <Hero />
           <AboutMe
             data={this.state.profile}
             rangeValue={this.state.rangeValue}
@@ -85,14 +84,12 @@ export class Home extends Component {
             data={{ educ: this.state.education, exp: this.state.experience }}
           />
         </main>
-        <footer>
-          <Footer
-            data={{
-              contact: this.state.profile.contactInfo,
-              projects: this.state.projects,
-            }}
-          />
-        </footer>
+        <Footer
+          data={{
+            contact: this.state.profile.contactInfo,
+            projects: this.state.projects,
+          }}
+        />
       </div>
     );
   }

@@ -1,7 +1,7 @@
 import React from "react";
 import "./tecPanel.scss";
-import Experience from "../experience";
-import Education from "../education";
+import Experience from "../../home/experience";
+import Education from "../../home/education";
 
 const TecPanel = (props) => {
   const { data } = props;

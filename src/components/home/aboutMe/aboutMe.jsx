@@ -1,7 +1,7 @@
 import React from "react";
 import "./aboutMe.scss";
 import Avatar from "react-avatar";
-import CustomScrollbar from "../common/scrollbar";
+import CustomScrollbar from "../../common/scrollbar";
 import { ScrollRotate } from "react-scroll-rotate";
 
 const AboutMe = (props) => {
@@ -23,7 +23,7 @@ const AboutMe = (props) => {
             name="hola"
             round={true}
             size={profilePicture.sizexmd}
-            src={require("../../assests/profile.png")}
+            src={require("../../../assests/profile.png")}
           />
         </span>
         <span className={"aboutMe-responsive-avatarl"}>
@@ -31,7 +31,7 @@ const AboutMe = (props) => {
             name="hola"
             round={true}
             size={profilePicture.sizexl}
-            src={require("../../assests/profile.png")}
+            src={require("../../../assests/profile.png")}
           />
         </span>
       </ScrollRotate>

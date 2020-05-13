@@ -1,7 +1,7 @@
 import React from "react";
 import "./iconsMenu.scss";
 
-import IconItem from "../common/iconItem/index";
+import IconItem from "../../common/iconItem/index";
 import Avatar from "react-avatar";
 import { ScrollRotate } from "react-scroll-rotate";
 
@@ -29,7 +29,7 @@ export const IconsMenu = (props) => {
             name="hola"
             round={true}
             size={profilePicture.size}
-            src={require("../../assests/coati.jpg")}
+            src={require("../../../assests/coati.jpg")}
           />
         </ScrollRotate>
       </span>

@@ -3,9 +3,8 @@ import "./footer.scss";
 
 const Footer = (props) => {
   const { data } = props;
-  console.log(data.contact);
   return (
-    <div className="footer-container">
+    <footer className="footer-container">
       <div>
         <h1 className="footer-title">Contact me</h1>
         <ul>
@@ -47,9 +46,8 @@ const Footer = (props) => {
             {data.projects.data
               ? data.projects.data.map((project, idx) => {
                   return (
-                    <p>
+                    <p key={idx}>
                       <a
-                        key={idx}
                         href={project.link}
                         target="_blank"
                         rel="noopener noreferrer"
@@ -63,7 +61,7 @@ const Footer = (props) => {
           </li>
         </ul>
       </div>
-    </div>
+    </footer>
   );
 };
 
